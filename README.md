@@ -61,7 +61,6 @@ mount *.squashfs /mnt/<foldername>
 
 Looks identical to disk1.squashfs
 
-
 ## Translate stuff to an ontology
 
 - Directory structure (`tree`)
@@ -69,3 +68,4 @@ Looks identical to disk1.squashfs
 - Custom tools used (`bin` and `opt`)
 - Versions (`deploy`, `bin` and `etc<\/sv>`)
 - Keys (`etc/<ssh/ssl>`)
+- Libraries (`lib`)
