@@ -46,7 +46,7 @@ mount *.squashfs /mnt/<foldername>
 - `usr`
   - `bin` binaries point to `busybox` binary from above
   - `lib` common libraries, some point to `lib` directory from above
-  - `libexec` contains an `sftp-server` and `ssh-keysign` / -helper stuff
+  - `libexec` contains a `sftp-server` and `ssh-keysign` / -helper stuff
   - `local` codec amp power tests
   - `proto3` protocol buffer language to structure protocol buffer data (from [developers.google.com/protocol-buffers/docs/proto3](developers.google.com/protocol-buffers/docs/proto3))
   - `sbin` root-privileged binaries. Some point to `lvm`, some to `busybox`
