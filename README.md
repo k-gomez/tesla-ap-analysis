@@ -1,21 +1,24 @@
 # Tesla autopilot analysis
 
-```bash
-mkdir /mnt/<foldername>
-mount *.squashfs /mnt/<foldername>
-```
+## General 
 
-## disk1.squashfs
+The AP is running on embedded Linux. It is created using buildroot version 2016.05 [`etc/os-release`].
 
-### Folders
+Analysis of `disk1.squashfs`.
+
+## Folders
 
 - `autopilot`: empty
 - `bin`
   - contains lots of programs all pointing to `busybox`
-  - `busybox` contains a lot of Linux commands stripped down to one small binary, commonly used in embedded devices
-  - `ape-updater` is a binary for the Tesla autopilot ECU updater
+  - `busybox`: contains a lot of Linux commands stripped down to one small binary, commonly used in embedded Linux
+  - `ape-updater`: symbolic link to `../deploy/ape-updater`: binary for the Tesla autopilot ECU updater
   - `compile_et`
+  - `minijail0`: Minijail is a sandboxing and containment tool used in Chrome OS and Android. It provides an executable that can be used to launch and sandbox other programs, and a library that can be used by code to sandbox itself.
+
+  - `mk_cmds`: custom tool that does some `sed` stuff using templates
 - `deploy`: contains a lot of `*.img` files for different hardware versions of different components
+  - `updater-proxy`: TODO
 - `dev`: weird `console` file and a symbolic link for logs
 - `etc`
   - different configuration files (`.conf`)
