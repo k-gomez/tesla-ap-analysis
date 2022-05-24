@@ -1,5 +1,15 @@
 # Tesla autopilot analysis
 
+ToDo:
+- Number of programs 
+- Programming languages
+- Library versions -> known vulns?
+- Barchart for file time-stamps
+- List of "sensitive" information
+- Explanation of files + directories (what are thos efiles used for?)
+- Meta-data (what meta-data is relevant? find related work)
+    - Wasn't really able to find a paper that lists "the" meta-data
+
 ## General 
 
 The AP is running on embedded Linux. It is created using buildroot version 2016.05 [`etc/os-release`].
