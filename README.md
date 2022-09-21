@@ -59,16 +59,3 @@ Analysis of `disk1.squashfs`.
 ### General information
 
 - uses AppArmor to manage access rights granted to programs (location: `etc/apparmor` and `etc/apparmor.d`)
-
-## disk2.squashfs
-
-Looks identical to disk1.squashfs
-
-## Translate stuff to an ontology
-
-- Directory structure (`tree`)
-- Implements programs (`bin`, `etc`)
-- Custom tools used (`bin` and `opt`)
-- Versions (`deploy`, `bin` and `etc<\/sv>`)
-- Keys (`etc/<ssh/ssl>`)
-- Libraries (`lib`)
